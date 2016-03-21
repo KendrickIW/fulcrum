@@ -57,62 +57,13 @@ a img {
   z-index: 900;
 }
 
-ul#primary-nav {
-  background-image: image-url('logo.png');
-  background-repeat: no-repeat;
-  background-position: 13px 6px;
-  margin: 0;
-  padding: 0;
-  padding: 1em 1em 1em 40px;
-  color: white;
-  overflow: hidden;
-  list-style-type: none;
-}
 
-ul#primary-nav li {
-  float: right;
-}
-
-ul#primary-nav li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
+.root {
   text-decoration: none;
-}
-
-ul#primary-nav li.root {
-  float: left;
+  color: lightgrey;
   font-size: large;
 }
-/*
-ul#primary-nav li.secondary {
-  position: relative;
-  @include icons-sprite(collapse, false, 0px, 6px);
-  background-color: #333;
-  background-position-x:right;
-  padding: 0.4em 18px 0.4em 0.4em;
-  @include border-radius(5px);
-  text-shadow: black 0 1px 0;
-}
-ul#primary-nav li.secondary ul {
-  visibility: hidden;
-}
-ul#primary-nav li.secondary:active ul {
-  visibility: visible;
-}
-ul#primary-nav li.secondary ul {
-  padding: 0.3em;
-  position: absolute;
-  left: 0; top: 1.7em;
-  background-color: #333;
-  @include border-radius(0 5px 5px 5px);
-}
-ul#primary-nav li.secondary ul li {
-  white-space: nowrap;
-  text-align: left;
-  display: block;
-}
-*/
+
 #title_bar {
   background: #efefef;
   @include background(linear-gradient(top, #efefef, #dfe1e2));
@@ -729,12 +680,12 @@ div.spinner {
   }
 }
 
-div#keycut-help { 
-  top: 1em; left: 1em; 
-  position: absolute; opacity:0.8; 
+div#keycut-help {
+  top: 1em; left: 1em;
+  position: absolute; opacity:0.8;
   background:black; color:yellow;
   @include border-radius(5px);
-  
+
   a.close {
     color:yellow; text-align:right; display:block; margin:1em;
   }
@@ -753,8 +704,21 @@ div#keycut-help {
 }
 
 .navbar-brand {
-  margin-top: auto;
-  margin-bottom: auto;
+  position: relative;
+  display: inline-block;
+  height: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+a.navbar-brand {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.navbar-bran-title {
+  color: lightgrey;
 }
 /*
 .navbar-default {

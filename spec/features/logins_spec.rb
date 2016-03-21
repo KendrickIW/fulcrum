@@ -41,7 +41,7 @@ describe "Logins" do
       click_button 'Sign in'
 
       page.should have_selector('h1', :text => 'Listing Projects')
-      page.should have_selector('#primary-nav', :text => 'user@example.com')
+      page.should have_selector('#primary-nav', :text => user.name)
     end
 
   end
@@ -53,6 +53,7 @@ describe "Logins" do
 
     it "logs out the user" do
       visit root_path
+      click_on user.name
       click_on 'Log out'
 
       page.should have_selector('h1', :text => 'Sign in')
