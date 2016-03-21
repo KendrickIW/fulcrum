@@ -58,26 +58,33 @@ a img {
 }
 
 ul#primary-nav {
-  text-align: right;
   background-image: image-url('logo.png');
   background-repeat: no-repeat;
   background-position: 13px 6px;
   margin: 0;
+  padding: 0;
   padding: 1em 1em 1em 40px;
   color: white;
+  overflow: hidden;
+  list-style-type: none;
 }
+
 ul#primary-nav li {
-  padding: 0 0.5em;
-  display: inline;
+  float: right;
 }
+
 ul#primary-nav li a {
+  display: block;
   color: white;
+  padding: 14px 16px;
   text-decoration: none;
 }
+
 ul#primary-nav li.root {
   float: left;
   font-size: large;
 }
+/*
 ul#primary-nav li.secondary {
   position: relative;
   @include icons-sprite(collapse, false, 0px, 6px);
@@ -90,7 +97,7 @@ ul#primary-nav li.secondary {
 ul#primary-nav li.secondary ul {
   visibility: hidden;
 }
-ul#primary-nav li.secondary:hover ul {
+ul#primary-nav li.secondary:active ul {
   visibility: visible;
 }
 ul#primary-nav li.secondary ul {
@@ -105,7 +112,7 @@ ul#primary-nav li.secondary ul li {
   text-align: left;
   display: block;
 }
-
+*/
 #title_bar {
   background: #efefef;
   @include background(linear-gradient(top, #efefef, #dfe1e2));
@@ -739,3 +746,22 @@ div#keycut-help {
     }
   }
 }
+
+.navbar {
+  border-radius: 0 !important;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/*
+.navbar-default {
+  background: $darkgrey;
+  @include background(linear-gradient(top, $darkgrey, $darkgrey*0.75));
+  border-bottom: 1px solid $darkgrey*0.7;
+  @include box-shadow(0 1px 2px #aaaaaa);
+  text-shadow: black 0 1px 0;
+}
+*/

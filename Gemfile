@@ -14,6 +14,8 @@ gem 'rails-i18n'
 gem 'configuration'
 gem 'rails-observers', '~> 0.1.2'
 gem 'jquery-ui-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
+#gem 'autoprefixer-rails'
 
 gem 'pg', group: :postgres
 gem 'mysql2', group: :mysql

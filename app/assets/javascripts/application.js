@@ -6,6 +6,7 @@
 //= require jquery-ui
 //= require jquery.gritter.min
 //= require jquery.scrollTo-min
+//= require bootstrap-sprockets
 //= require date.format
 //= require underscore
 //= require backbone
