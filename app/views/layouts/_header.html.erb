@@ -33,6 +33,11 @@
                       :method => :delete %></li>
           </ul>
         </li>
+        <% else %>
+          <li><%= link_to t('log in'), new_user_session_path %></li>
+          <%- unless Fulcrum::Application.config.fulcrum.disable_registration %>
+          <li><%= link_to t('sign up'), new_user_registration_path %></li>
+          <% end -%>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
